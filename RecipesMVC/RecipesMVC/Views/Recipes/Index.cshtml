@@ -1,0 +1,15 @@
+﻿@model IEnumerable<RecipesDTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+   
+    <a asp-action="Create" class="btn btn"-default">Dodaj</a>
+</p>
+<partial name="_RecipesTable" model="@Model" />
+<partial name="_Pagination"/>
